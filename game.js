@@ -5,14 +5,11 @@ const choices = ["rock", "paper", "scissors"];
 function getComputerChoice() {
     return choices[Math.floor(Math.random() * 3)];
 };
-getComputerChoice()
+
 // Human Choice //
 function getHumanChoice() {
-    return prompt("Play The Game  - Rock, Paper, Secissor-  ")
+    return prompt("Play The Game  - Rock, Paper, secissor-  ")
 };
-
-
- 
 function playRound(humanChoice, computerChoice) {
    if(
     (humanChoice === "rock" && computerChoice === "scissors") || (humanChoice === "scissors" && computerChoice === "paper") || (humanChoice === "paper" && computerChoice === "rock")
@@ -27,14 +24,4 @@ function playRound(humanChoice, computerChoice) {
 }
 const humanChoice = getHumanChoice();
 const computerChoice = getComputerChoice();
-console.log(playRound(humanChoice, computerChoice))
-
-
-
-   //(
-   // (humanChoice === "rock" && computerChoice === "rock")||
-   // (humanChoice === "secissors" && computerChoice === "scissors")||
-   // (humanChoice === "paper" && computerChoice === "paper")
-   //) 
-   
-    // this is method is good but you can do with simple method computerChoice === humanChoice
+console.log(playRound(humanChoice, computerChoice));
