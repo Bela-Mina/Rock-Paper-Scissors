@@ -4,12 +4,12 @@
 const choices = ["rock", "paper", "scissors"];
 function getComputerChoice() {
     return choices[Math.floor(Math.random() * 3)];
-};
+}
 
 // Human Choice //
 function getHumanChoice() {
     return prompt("Play The Game  - Rock, Paper, secissor-  ")
-};
+}
 function playRound(humanChoice, computerChoice) {
    if(
     (humanChoice === "rock" && computerChoice === "scissors") || (humanChoice === "scissors" && computerChoice === "paper") || (humanChoice === "paper" && computerChoice === "rock")
