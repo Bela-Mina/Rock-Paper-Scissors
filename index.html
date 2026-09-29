@@ -8,29 +8,29 @@
 </head>
 <body>
     <header>
-        <h2>ROCK PAPER SCISSORS</h2>
+        <h2>ROCK - PAPER - S CISSORS</h2>
     </header>
     <main class="container">
         <div class="btn">
-            <button class="rock-choice" type="button" onclick="rock()">👊</button>
-            <button class="paper-choice" type="button" onclick="paper()">🖐️</button>
-            <button class="scissors-choice" type="button" onclick="scissors()">✌️</button>
+            <button id="rock-choice" type="button">👊</button>
+            <button id="paper-choice" type="button">🖐️</button>
+            <button id="scissors-choice" type="button">✌️</button>
         </div>
         <!--some correction how does the js know it is rock or paper so name the  by their charchter -->
         <div class="container-two">
             <div class="choices">
-                <p class="human-choice">Your-Choice: </p>
-                <p class="computer-choice">computer: </p>
+                <p id="human-choice">PLAYER: </p>
+                <p id="computer-choice">Computer: </p>
             </div>
                 <!--when you try name use standard method human-choice-->
             <div class="game-result">
-                <p class="result">Result:</p>
+                <p id="result">Result:</p>
             </div>
             <!--You use same class in the first div and second div -->
 
             <div class="score-point">
-                <p class="human">You:</p>
-                <p class="computer">computer:</p>
+                <p id="human">Player Score:</p>
+                <p id="computer">Computer Score:</p>
             </div>
         </div>
 
