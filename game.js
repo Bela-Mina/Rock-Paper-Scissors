@@ -1,4 +1,4 @@
-
+// this is for conosole.log
 // //step 1 - computer Choice//
 // const choices = ["rock", "paper", "scissors"];
 // function getComputerChoice() {
@@ -70,6 +70,8 @@ scissors.addEventListener("click", function() {
 
     playRound(choices[2], computer)
     
+    scoreCounter(choices[2], computer)
+
 })
 
 
@@ -85,7 +87,24 @@ function playRound(playerChoice, computerChoice) {
         Result.innerHTML = `Computer wins! ${computerChoice} beats ${playerChoice}`
     }
 }
-
+let playerScore1 = 0;
+let computerScore1 = 0;
+function scoreCounter (playerChoice, computerChoice) {
+    if(
+        (playerChoice === "rock" && computerChoice === "scissors") || (playerChoice === "scissors" && computerChoice === "paper") || (playerChoice === "paper" && computerChoice === "rock")
+        ) {
+             playerScore1++
+             playerScore.textContent = playerScore1
+        } else if (playerChoice === computerChoice) {
+            //none
+        } else {
+            computerScore1++
+           computerScore.textContent =  computerScore1
+        }
+}
+// scoreCounter("rock", "scissors")//human win
+// scoreCounter("scissors", "rock")//computer win
+// scoreCounter("paper", "scissors")//computer win
 
 
 
