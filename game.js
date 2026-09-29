@@ -98,12 +98,12 @@ function scoreCounter (playerChoice, computerChoice) {
         (playerChoice === "rock" && computerChoice === "scissors") || (playerChoice === "scissors" && computerChoice === "paper") || (playerChoice === "paper" && computerChoice === "rock")
         ) {
              playerScore1++
-             playerScore.textContent = playerScore1
+             playerScore.textContent = `Player Score: ${playerScore1}`
         } else if (playerChoice === computerChoice) {
             //none
         } else {
             computerScore1++
-           computerScore.textContent =  computerScore1
+           computerScore.textContent =  `Computer Score: ${computerScore1}`
         }
 }
 
