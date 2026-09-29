@@ -50,6 +50,9 @@ rock.addEventListener("click", function() {
     computerChoice.innerHTML = `computer: ${computer}`
     //
     playRound(choices[0], computer)
+    //
+    scoreCounter(choices[1], computer)
+
 
 })
 paper.addEventListener("click", function() {
@@ -59,6 +62,8 @@ paper.addEventListener("click", function() {
     computerChoice.innerHTML = `computer: ${computer}`
     //
     playRound(choices[1], computer)
+    //
+    scoreCounter(choices[1], computer)
 
 })
 scissors.addEventListener("click", function() {
@@ -68,10 +73,9 @@ scissors.addEventListener("click", function() {
     computerChoice.innerHTML = `computer: ${computer}`
     //
 
-    playRound(choices[2], computer)
-    
+    playRound(choices[2], computer);
+    //
     scoreCounter(choices[2], computer)
-
 })
 
 
@@ -102,9 +106,6 @@ function scoreCounter (playerChoice, computerChoice) {
            computerScore.textContent =  computerScore1
         }
 }
-// scoreCounter("rock", "scissors")//human win
-// scoreCounter("scissors", "rock")//computer win
-// scoreCounter("paper", "scissors")//computer win
 
 
 
