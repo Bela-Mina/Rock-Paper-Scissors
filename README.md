@@ -7,6 +7,8 @@ A browser-based Rock Paper Scissors game built with HTML, CSS, and JavaScript.
 [Live Demo](#)
 
 ## Screenshot
+<img width="566" height="347" alt="image" src="https://github.com/user-attachments/assets/ecba644a-20b0-43f8-9fdd-b604c94f6ae6" />
+
 
 ![Rock Paper Scissors](#)
 
